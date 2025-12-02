@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const pageTitle = "私について";
 const identity = {
@@ -34,9 +36,7 @@ const skillColor = "navy";
      </style>
 	</head>
 	<body>
-           <a href="/">ホーム</a>
-           <a href="/about/">概要</a>
-           <a href="/blog/">ブログ</a>
+           <Navigation />
 
   
           <h1>{pageTitle}</h1>
@@ -45,6 +45,7 @@ const skillColor = "navy";
           <p>私はAstroの入門チュートリアルを進めています。これは私のウェブサイトの2番目のページで、自分で作った初めてのページです！</p>
 
           <p>このサイトはチュートリアルを進めるにつれて更新されていきます。定期的にチェックして、私の旅の様子を見に来てください！</p>
+           
 </body>
 	
 </html>
@@ -65,3 +66,5 @@ const skillColor = "navy";
 {finished && <p>I finished this tutorial! このチュートリアルを終えました！</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days. 3日で終えるのが目標です。</p> : <p>My goal is not 3 days. 3日が目標ではありません。</p>}
+
+<Footer />
