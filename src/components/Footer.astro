@@ -1,8 +1,17 @@
 ---
-const platform = "X";
-const username = "bouro_x";
+import Social from './Social.astro';
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-   <p>私のプロジェクトについて詳しくは<a href={`https://www.${platform}.com/${username}`}>{platform}</a>をご確認ください！</p>
+  <Social platform="x" username="bouro_x" />
+  <Social platform="note" username="bouro_x" />
+  <Social platform="youtube" username="@ぼうろ-v9w" />
 </footer>
+
