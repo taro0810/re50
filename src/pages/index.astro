@@ -19,5 +19,10 @@ const pageTitle = "50の挑戦";
 
 		<h1>{pageTitle}</h1>
 		 <Footer />
+		 <script>
+    Document.querySelector('.hamburger').addEventListener('click', () => {
+      Document.querySelector('.nav-links').classList.toggle('expanded');
+    });
+  </script>
 	</body>
 </html>
