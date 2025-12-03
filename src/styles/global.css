@@ -21,7 +21,7 @@ h1 {
 }
 
 /* ナビゲーションのスタイル */
-hamburger {
+.hamburger {
   padding-right: 20px;
   cursor: pointer;
 }
