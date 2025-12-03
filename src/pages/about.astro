@@ -37,7 +37,7 @@ const skillColor = "navy";
 	</head>
 	<body>
             <Header />
-            
+
            <h1>{pageTitle}</h1>
            <h2>... そして私の新しいAstroサイトについて</h2>
 
@@ -65,5 +65,7 @@ const skillColor = "navy";
 {finished && <p>I finished this tutorial! このチュートリアルを終えました！</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days. 3日で終えるのが目標です。</p> : <p>My goal is not 3 days. 3日が目標ではありません。</p>}
-
+ <script>
+    import "../scripts/menu.js";
+  </script>
 <Footer />
