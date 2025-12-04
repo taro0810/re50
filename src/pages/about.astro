@@ -1,8 +1,6 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-const pageTitle = "私について";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "ぼうろについて";
 const identity = {
   firstName: "サラ",
   country: "カナダ",
@@ -16,6 +14,9 @@ const finished = false;
 const goal = 3;
 const skillColor = "navy";
 ---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
 
 <html lang="en">
 	<head>
@@ -36,9 +37,7 @@ const skillColor = "navy";
      </style>
 	</head>
 	<body>
-            <Header />
 
-           <h1>{pageTitle}</h1>
            <h2>... そして私の新しいAstroサイトについて</h2>
 
            <p>私はAstroの入門チュートリアルを進めています。これは私のウェブサイトの2番目のページで、自分で作った初めてのページです！</p>
@@ -68,4 +67,3 @@ const skillColor = "navy";
  <script>
     import "../scripts/menu.js";
   </script>
-<Footer />
