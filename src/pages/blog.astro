@@ -1,9 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "挑戦の軌跡";
 ---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
 
 <html lang="en">
 	<head>
@@ -14,8 +15,6 @@ const pageTitle = "挑戦の軌跡";
 		<title>Astro</title>
 	</head>
 	<body>
-		 <Header />
-
 		<h1>{pageTitle}</h1>
         <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
      <ul>
@@ -23,8 +22,7 @@ const pageTitle = "挑戦の軌跡";
        <li><a href="/posts/post-2/">記事2</a></li>
       <li><a href="/posts/post-3/">記事3</a></li>
      </ul>
-     
-      <Footer />
+    
      <script>
 	 import "../scripts/menu.js";
   </script>
