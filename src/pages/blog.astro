@@ -5,7 +5,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 const pageTitle = "挑戦の軌跡";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>私の素晴らしいブログのサブタイトル</h2>
+  <h2>ここが私の挑戦の記録保管庫です</h2>
 </BaseLayout>
 
 <html lang="en">
@@ -17,8 +17,7 @@ const pageTitle = "挑戦の軌跡";
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>{pageTitle}</h1>
-        <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
+        <p>ここには、私が人生をメンテナンスしていく記録を残していきます。</p>
      <ul>
       {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
      </ul>
