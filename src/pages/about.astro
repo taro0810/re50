@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "ぼうろについて";
+const pageTitle = "このサイトとぼうろについて";
 const identity = {
   firstName: "サラ",
   country: "カナダ",
@@ -15,8 +15,32 @@ const goal = 3;
 const skillColor = "navy";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>私の素晴らしいブログのサブタイトル</h2>
+  <h2>この未熟ながら素晴らしいサイトについて</h2>
 </BaseLayout>
+<p>このサイトは、<a href="https://docs.astro.build/ja/tutorial/0-introduction/">Astroのチュートリアル</a>を進めることで完成しました。</p>
+
+<p>SNS以外で自分の言葉をネットに上げられるなんて！！！！</p>
+<br>
+<p>「HTML」って何？？？</p>
+<p>そんな状態から、なんとかここまで漕ぎ着けることができました！</p>
+
+<ul>
+  <li>無料にこだわる</li>
+  <br>
+
+<li>なるべく自分の手で</li>
+<br>
+<li>わからなくても諦めずに調べる</li>
+<br>
+</ul>
+
+<p>そんなことを自分で決めて、作り始めたサイトです。</p>
+
+<p>未熟なのは当然、承知の上で</p>
+<p>あえて言わせていただきましょう。</p>
+
+<p>この素晴らしいサイトへようこそ！</p>
+
 
 <html lang="en">
 	<head>
@@ -38,32 +62,48 @@ const skillColor = "navy";
 	</head>
 	<body>
 
-           <h2>... そして私の新しいAstroサイトについて</h2>
+           <h2>このサイトを作るために活用させてもらっているサービス</h2>
 
-           <p>私はAstroの入門チュートリアルを進めています。これは私のウェブサイトの2番目のページで、自分で作った初めてのページです！</p>
+           <p>このサイトは無料で作成しております。</p>
+           <p>サイトを作成するために使わせてもらっているサービスについて紹介します。</p>
 
-           <p>このサイトはチュートリアルを進めるにつれて更新されていきます。定期的にチェックして、私の旅の様子を見に来てください！</p>
+           <p>まずはじめに、先に紹介したAstro。</p>
+           <a href="https://docs.astro.build/ja/tutorial/0-introduction/">Astro</a>
            
 </body>
-	
+	<br>
 </html>
-<p>以下は私に関するいくつかの事実です。</p>
+<p>次に、このサイトを作成するために使用しているエディタです。</p>
+<p>エディタは、「VSCODE」というものを使っています。</p>
+<a href="https://code.visualstudio.com/">VSCODE（ビジュアルスタジオコード）</a>
+<p>このVSCODEでコード（プログラム！！！）を書いています。</p>
+<br>
+<p>そして、GitHubというサービスも使っています。</p>
+<a href="https://github.com/">GitHb</a>
+<p>VSCODEで書いたコードを保管（？）し、ネットに上げるための処理をします。</p>
+<p>※全てにおいて言えますが、</p>
+<p>正直私自身、あまり仕組みを理解していません汗</p>
+<br>
+<p>最後に、Cloud Flareです。</p>
+<a href="https://www.cloudflare.com/ja-jp/">Cloud Flare</a>
+<p>先のGitHubに送ったコードが、このCloud Flareでネット上に公開されます。</p>
+<p>なんとなく、、、、、</p>
+<p>そのように理解しています汗汗</p>
+<br>
+<h2>私について</h2>
+<p>50歳になってはじめて情報発信というものを知り、</p>
+<p>SNSやnoteなどで、</p>
 <ul>
-  <li>私の名前は{identity.firstName}です。</li>
-  <li>{identity.country}に住んでおり、{identity.occupation}として働いています。</li>
-  {identity.hobbies.length >= 2 &&
-    <li>私の2つの趣味は{identity.hobbies[0]}と{identity.hobbies[1]}です。</li>
-  }
+  <li>自分が考えていること</li>
+  <li>自分が学んだこと</li>
+  <li>自分がやってみたこと</li>
 </ul>
-<p>私のスキルは以下の通りです。</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
-{happy && <p>I am happy to be learning Astro! Astroを学べて幸せです！</p>}
+<p>を発信しています。</p>
+<br>
+<p>50歳を超えて</p>
+<p>「もう一回、燃えるような人生を生きよう」</p>
+<p>なんて思っているオッサンです。</p>
 
-{finished && <p>I finished this tutorial! このチュートリアルを終えました！</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days. 3日で終えるのが目標です。</p> : <p>My goal is not 3 days. 3日が目標ではありません。</p>}
  <script>
     import "../scripts/menu.js";
   </script>
