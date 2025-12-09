@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const pageTitle = "挑戦の軌跡";
+
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>ここが私の挑戦の記録保管庫です</h2>
