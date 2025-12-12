@@ -8,4 +8,5 @@ image:
     url: 'https://clean-crimson-f1l8077dpr-bj95ykm2r9.edgeone.dev/rennsyuu2.png'
     alt: 'Astroのロゴ。'
 tags: ["astro", "ブログ", "公開学習"]
+draft: true
 ---
