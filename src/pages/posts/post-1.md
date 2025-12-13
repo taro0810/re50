@@ -5,7 +5,7 @@ pubDate: 2022-07-01
 description: 'これは私の新しいAstroブログの最初の記事です。'
 author: 'ぼうろ'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://smoggy-chocolate-qu5begbx3y-466zdiypno.edgeone.dev/3.png'
     alt: 'Astroのロゴ。'
 tags: ["astro", "ブログ", "公開学習"]
 ---
